@@ -28,6 +28,7 @@ const nameClassMap = {
   // 地形
   'vc-provider-terrain-arcgis-tiled-elevation': 'ArcGISTiledElevationTerrainProvider',
   'vc-provider-terrain-cesium': 'CesiumTerrainProvider',
+  'vc-provider-terrain-supermap': 'SupermapTerrainProvider',
   // 实体
   'vc-entity': 'Entity',
   'vc-graphics-billboard': 'BillboardGraphics',

@@ -22,6 +22,7 @@ import * as BaiduMapImageryProvider from './components/imageryLayer/baidu'
 // 地形
 import * as ArcGISTiledElevationTerrainProvider from './components/terrain/arcgis'
 import * as CesiumTerrainProvider from './components/terrain/cesium'
+import * as SupermapTerrainProvider from './components/terrain/supermap'
 // 数据源
 import * as CustomDataSource from './components/datasource/custom'
 import * as CzmlDataSource from './components/datasource/czml'
@@ -176,6 +177,7 @@ function plugin (Vue, options = {}) {
   // 地形
   Vue.use(ArcGISTiledElevationTerrainProvider, options)
   Vue.use(CesiumTerrainProvider, options)
+  Vue.use(SupermapTerrainProvider, options)
   // 数据源
   Vue.use(CustomDataSource, options)
   Vue.use(CzmlDataSource, options)
@@ -314,6 +316,7 @@ export {
 
   ArcGISTiledElevationTerrainProvider,
   CesiumTerrainProvider,
+  SupermapTerrainProvider,
 
   CustomDataSource,
   CzmlDataSource,
