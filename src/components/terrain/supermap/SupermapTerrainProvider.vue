@@ -5,10 +5,22 @@ export default {
   name: 'VcProviderTerrainSupermap',
   mixins: [url, mixinTerrainProvider],
   props: {
-    isSct: Boolean,
-    isShowGlobe: Boolean,
-    requestVertexNormals: Boolean,
-    requestWaterMask: Boolean,
+    isSct: {
+      type: Boolean,
+      default: true
+    },
+    isShowGlobe: {
+      type: Boolean,
+      default: true
+    },
+    requestVertexNormals: {
+      type: Boolean,
+      default: false
+    },
+    requestWaterMask: {
+      type: Boolean,
+      default: false
+    },
     ellipsoid: Object,
     credit: [String, Object]
   },
